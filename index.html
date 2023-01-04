@@ -6,22 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontes em CSS</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            /*
-            Medidas absolutas
-            - cm, mm, in, px, pt, pc
-            Medidas relativas
-            - em, ex, rem, vw, vh, % 
-            */
-            font-size: 1em ;
+
+        @font-face {
+            font-family: 'song';
+            src: url(fonts/Please-write-me-a-song.ttf) format('truetype');
         }
+
+        body {
+            background-color: peachpuff;
+        }
+
+        main {
+            font-family: 'song', sans-serif;
+            font-size: 2.5em ;
+            text-align: justify;
+            background-color: lightgray;
+            width: 600px;
+            margin: auto;
+            padding: 15px;
+            box-shadow: 5px 5px 15px;
+            border-radius: 20px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Trabalhando com fontes</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolorum culpa tempora voluptatem nobis voluptate repellat officia facere, repudiandae eaque totam suscipit ipsam, eum sapiente doloremque eius quisquam ullam sed!</p>
-    <h2>Subtítulo do exercício</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ex quae dolore, odio quaerat nesciunt reprehenderit aperiam facere blanditiis mollitia, magnam tenetur neque ea consequuntur? Consequuntur enim tempora aliquam nisi.</p>
+    <main>
+        <h1>Fontes personalizadas</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae corporis ipsa magnam expedita sint sunt, quod, eaque veniam illum qui earum mollitia necessitatibus possimus iusto, praesentium nemo dolore ab?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ex quae dolore, odio quaerat nesciunt reprehenderit aperiam facere blanditiis mollitia, magnam tenetur neque ea consequuntur? Consequuntur enim tempora aliquam nisi.</p>
+    </main>
 </body>
 </html>
